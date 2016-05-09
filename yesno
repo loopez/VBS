@@ -1,0 +1,8 @@
+titre1="Sur quel bouton allez vous cliquer???"
+titre2="Structure IF"
+rep=MsgBox(titre1,vbYesNo+Vbquestion,titre2 )
+if rep = VBYes then 
+	MsgBox "Vous avez cliqué sur Oui",VBinformation,titre2+" then"
+else
+	MsgBox "Vous avez cliqué sur Non", VBinformation, titre2+" else"
+end if
