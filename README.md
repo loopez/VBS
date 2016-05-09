@@ -1,2 +1,2 @@
 # VBS
-Scripts Visual Basic; tests et exercices
+Scripts VBs; tests et exercices
