@@ -1,0 +1,8 @@
+'
+'lab1_5.vbs 
+'
+titre= "Infos du jour"		'Variable qui contient le titre de la boîte 
+msg="Nous sommes le: " & date & VBCrLF 		' Premier message: VBCrLF permet de faire le saut à la ligne dans la boite
+msg= msg & "Il est: " & hour(now) & " h et " & minute(now) & " min" 	' Message au complet en utilisant la variable du premier message et les fonctions minute et hour
+
+MsgBox msg, VBinformation, titre   	'Boite de dialogue utilisant les variables déclarées 
