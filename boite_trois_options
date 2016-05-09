@@ -1,0 +1,20 @@
+'
+' lab1_4.vbs 
+'
+
+titre1="Choisir un bouton"  	'variable pour le message de la boîte¸
+titre2="Titre de la boîte" 	'variable pour le titre d ela boîte
+rep=MsgBox(titre1,vbYesNoCancel+vbQuestion,titre2) 	 'Boite de dialogue
+
+Select Case rep  	'déclaration des options
+	case VByes 
+		msg = "Yes"
+		icone = VBinformation 
+	case VBNo
+		msg = "No"
+		icone = VBexclamation
+	case else
+		msg = "Annuler"
+		icone = VBCritical
+end select 	'fin de la déclaration des options
+MsgBox "Vous avez cliqué sur " & msg, icone, "Titre de la boîte" 	'Boite de reponse
